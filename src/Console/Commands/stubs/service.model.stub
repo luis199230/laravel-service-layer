@@ -1,0 +1,16 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyFullModelClass;
+
+class DummyClass extends BaseService
+{
+    /**
+     * DummyClass constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct(DummyModelClass::class);
+    }
+}
