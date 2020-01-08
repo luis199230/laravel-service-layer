@@ -1,9 +1,9 @@
 # Service Layer
-![Packagist](https://img.shields.io/packagist/dm/luis199230/service-layer?style=plastic)
-![GitHub stars](https://img.shields.io/github/stars/luis199230/service-layer?style=plastic)
+![Packagist](https://img.shields.io/packagist/dm/luis199230/laravel-service-layer?style=plastic)
+![GitHub stars](https://img.shields.io/github/stars/luis199230/laravel-service-layer?style=plastic)
 
-This package allow generate service layer for abstract classes of business logic and decoupling calls to models. 
-The advice is use this layer of abstraction how to intermediate between controllers and models.
+This package allow generate service layer for abstraction the classes of the business logic and decoupling calls to models. 
+My advice is use this layer of abstraction as intermediate between controllers and models.
 
 ## Installation 
 
