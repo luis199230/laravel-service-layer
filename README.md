@@ -14,11 +14,29 @@ composer require madeweb/service-layer
 Generate service base class and custom service class
 
 ```sh
-php artisan make:service ServiceName  
+    php artisan make:service ServiceName  
 ```
 
 Generate service base class and custom service class with custom model 
 
 ```sh
-php artisan make:service ServiceName --model=App\\Models\\ModelName
+    php artisan make:service ServiceName --model=App\\Models\\ModelName
+```
+
+## For Lumen and Laravel version without discovery package
+
+### In file bootstrap/app.php (Lumen)
+
+```sh
+    $app->register(Madeweb\ServiceLayer\ServiceLayerProvider::class);
+```
+
+### In file config/app.php (Laravel without discovery package)
+```sh
+ 'providers' => [
+        /*
+         * Custom Service Providers...
+         */
+        Madeweb\ServiceLayer\ServiceLayerProvider::class,
+  ];
 ```
