@@ -2,6 +2,7 @@
 
 namespace Madeweb\ServiceLayer\Console\Commands;
 
+use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Support\Str;
 use InvalidArgumentException;
 use Illuminate\Console\GeneratorCommand;
@@ -85,7 +86,7 @@ class ServiceMakeCommand extends GeneratorCommand
     /**
      * @param $path
      * @param $name
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws FileNotFoundException
      */
     protected function buildBaseClass($path, $name)
     {
@@ -105,7 +106,7 @@ class ServiceMakeCommand extends GeneratorCommand
      *
      * @param  string $name
      * @return string
-     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     * @throws FileNotFoundException
      */
     protected function buildClass($name)
     {
